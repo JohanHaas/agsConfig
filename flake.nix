@@ -33,7 +33,6 @@
       ++ [
         pkgs.libadwaita
         pkgs.libsoup_3
-        pkgs.morewaita-icon-theme
       ];
   in {
     packages.${system} = {
