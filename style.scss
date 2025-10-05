@@ -8,8 +8,9 @@
 }
 
 $backcolor: rgba(20, 24, 30, 1);
-//$backcolor: #1e1e2e;
-
+//$foreground: rgba(50, 55, 65, 1);
+$foreground: #212121;
+$hover: #777777;
 
 window.Bar {
   background: $backcolor;
@@ -33,7 +34,7 @@ window.Bar {
     border-radius: 15px;
 
     &:hover {
-      background-color: #777777;
+      background-color: $hover;
     }
 
     .Options {
@@ -73,12 +74,43 @@ window.Bar {
     .Submenu {
       background-color: $backcolor;
       border-radius: 15px;
-      margin: 27px 0 0 0px;
+      margin: 28px 100px 0 0px;
       
       box {
+         background-color: $foreground;
+         border-radius: 15px;
+
+         padding: 10px;
+
+        .Profile {
+          border-radius: 50%;
+          padding: 0 10px 0 0;
+        }
+
+        .User {
+          padding: 0 200px 0 0;
+          color: rgba(255, 230, 150, 1);
+        }
+
+        .Powermenu {
+          color: #aa657b;
+          padding: 10px 10px;
+          background-color: $backcolor;
+          border-radius: 50%;
+
+          &:hover {
+            background-color: $hover;
+          }
+
+          .Icon {
+            margin: 2px 0 0 2px;
+          }
+        }
         
+        .Placeholder {
+          padding: 0 9px 0 0;
+        }
       }
     }
-
   }
 }

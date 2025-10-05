@@ -43,7 +43,9 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
           <label class="Clock" label={clock} />
         </box>
         /* right box */
-        <box $type="end"></box>
+        <box $type="end">
+          <RightBox />
+        </box>
       </centerbox>
     </window>
   )
