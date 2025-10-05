@@ -14,7 +14,7 @@ export default function Battery() {
     "percentage",
   )((p) => {
     const percentage = Math.floor(p * 100)
-    if (percentage <= 15) {
+    if (percentage <= 20) {
       return "Critical Battery"
     } else if (percentage <= 30) {
       return "Warning Battery"

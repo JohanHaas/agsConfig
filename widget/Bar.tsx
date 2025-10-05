@@ -14,7 +14,9 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
   const { TOP, LEFT, RIGHT } = Astal.WindowAnchor
 
   const display = Gdk.Display.get_default()
+  Gtk.Settings.get_default()!.gtk_icon_theme_name = "Fluent"
   const icontheme = Gtk.IconTheme.get_for_display(display)
+  print(icontheme.get_theme_name())
 
   const clock = createPoll("", 1000, () => {
     return GLib.DateTime.new_now_local().format("%H:%M %a, %d %b")

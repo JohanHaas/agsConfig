@@ -7,7 +7,7 @@
   font-size: 15px;
 }
 
-$backcolor: rgba(20, 24, 30, 0.7);
+$backcolor: rgba(20, 24, 30, 1);
 //$backcolor: #1e1e2e;
 
 
@@ -23,9 +23,10 @@ window.Bar {
 
   .Clock {
     //color: #fab387;
-    color: #d9d9d9;
-    padding: 1px 5px;
+    color: #fab387;
+    padding: 1px 5px 0px 5px;
     font-size: 14px;
+    margin: 0 0 -1px 0;
   }
 
   .RightBox {
@@ -35,11 +36,11 @@ window.Bar {
     }
 
     .Battery {
-      color: #a6e3a1;
+      color: #8EE29A;
       padding: 0 20px 0 0;
 
       &.Critical {
-        color: #f53d3d;
+        color: #aa657b;
       }
 
       &.Warning {
@@ -49,11 +50,17 @@ window.Bar {
       .Percentage {
         font-size: 14px;
         margin: 0 0 -3px 0;
+        padding: 0 5px 0 0;
       }
 
       .Icon {
-        margin: 0 0 2px 0;
+        margin: 0 0 0 0;
       }
+    }
+
+    .Wifi {
+      color: #A0CBFC;
+      padding: 0 20px 0 0;
     }
   }
 }

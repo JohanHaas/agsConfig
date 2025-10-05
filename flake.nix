@@ -25,6 +25,7 @@
       astal4 # or astal3 for gtk3
       battery
       wireplumber
+      network
     ];
 
     extraPackages =
@@ -32,6 +33,7 @@
       ++ [
         pkgs.libadwaita
         pkgs.libsoup_3
+        pkgs.morewaita-icon-theme
       ];
   in {
     packages.${system} = {
