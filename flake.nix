@@ -26,6 +26,8 @@
       battery
       wireplumber
       network
+      mpris
+      apps
     ];
 
     extraPackages =

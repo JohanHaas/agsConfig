@@ -1,14 +1,17 @@
 import Battery from "./Battery.tsx"
 import NetworkIcon from "./NetworkIcon.tsx"
+import Gtk from "gi://Gtk?version=4.0"
+import Popover from "./Popover.tsx"
 
 export default function RightBox() {
   return (
-    <button class="RightBox" onClicked={(self) => {}}>
+    <menubutton class="RightBox">
       <box>
         <NetworkIcon />
         <Battery />
         <label class="Options" label="☰" />
       </box>
-    </button>
+      <Popover />
+    </menubutton>
   )
 }

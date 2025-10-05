@@ -30,6 +30,12 @@ window.Bar {
   }
 
   .RightBox {
+    border-radius: 15px;
+
+    &:hover {
+      background-color: #777777;
+    }
+
     .Options {
       font-size: 17px;
       padding: 0 10px 0 0;
@@ -61,7 +67,18 @@ window.Bar {
     .Wifi {
       color: #A0CBFC;
       padding: 0 20px 0 0;
-      margin: 0 0 3px 0;
+      margin: 0 0 3px 10px;
     }
+    
+    .Submenu {
+      background-color: $backcolor;
+      border-radius: 15px;
+      margin: 27px 0 0 0px;
+      
+      box {
+        
+      }
+    }
+
   }
 }
