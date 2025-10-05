@@ -4,6 +4,7 @@
   background-color: transparent;
   border: None;
   border-radius: 0;
+  font-size: 15px;
 }
 
 $backcolor: rgba(20, 24, 30, 0.7);
@@ -13,7 +14,6 @@ $backcolor: rgba(20, 24, 30, 0.7);
 window.Bar {
   background: $backcolor;
   font-family: "JetBrainsMono Nerd Font";
-  font-size: 15px;
   padding: 2px 0;
   //border-bottom: 2px solid #555555;
 
@@ -32,6 +32,28 @@ window.Bar {
     .Options {
       font-size: 17px;
       padding: 0 10px 0 0;
+    }
+
+    .Battery {
+      color: #a6e3a1;
+      padding: 0 20px 0 0;
+
+      &.Critical {
+        color: #f53d3d;
+      }
+
+      &.Warning {
+        color: #f9e230;
+      }
+
+      .Percentage {
+        font-size: 14px;
+        margin: 0 0 -3px 0;
+      }
+
+      .Icon {
+        margin: 0 0 2px 0;
+      }
     }
   }
 }
