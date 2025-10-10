@@ -11,7 +11,7 @@ import GLib from "gi://GLib"
 import RightBox from "./barModules/RightBox.tsx"
 import Mpris from "./barModules/Mpris.tsx"
 
-export default function Bar(gdkmonitor: Gdk.Monitor) {
+export default function Bar({ gdkmonitor }: { gdkmonitor: Gdk.Monitor }) {
   const { TOP, LEFT, RIGHT } = Astal.WindowAnchor
 
   const display = Gdk.Display.get_default()
