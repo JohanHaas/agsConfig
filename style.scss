@@ -77,38 +77,51 @@ window.Bar {
       margin: 28px 100px 0 0px;
       
       box {
-         background-color: $foreground;
-         border-radius: 15px;
 
-         padding: 10px;
+        .Userinteractions {
+          background-color: $foreground;
+          border-radius: 15px;
 
-        .Profile {
-          border-radius: 50%;
-          padding: 0 10px 0 0;
-        }
+          padding: 10px;
 
-        .User {
-          padding: 0 200px 0 0;
-          color: rgba(255, 230, 150, 1);
-        }
-
-        .Powermenu {
-          color: #aa657b;
-          padding: 10px 10px;
-          background-color: $backcolor;
-          border-radius: 50%;
-
-          &:hover {
-            background-color: $hover;
+          .Profile {
+            border-radius: 50%;
+            padding: 0 10px 0 0;
           }
 
-          .Icon {
-            margin: 2px 0 0 2px;
+          .User {
+            padding: 0 200px 0 0;
+            color: rgba(255, 230, 150, 1);
           }
-        }
+
+          .Powermenu {
+            color: #aa657b;
+            padding: 10px 10px;
+            background-color: $backcolor;
+            border-radius: 50%;
+
+            &:hover {
+              background-color: $hover;
+            }
+
+            .Icon {
+              margin: 2px 0 0 2px;
+            }
+          }
         
-        .Placeholder {
-          padding: 0 9px 0 0;
+          .Placeholder {
+            padding: 0 9px 0 0;
+          }
+        }
+
+        .SysteminfoCard {
+          background-color: $foreground;
+          margin: 20px 0 0 0;
+          border-radius: 15px;
+
+          .Cpu {
+            padding: 10px
+          }
         }
       }
     }

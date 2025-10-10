@@ -1,10 +1,14 @@
 {
   "dependencies": {
     "ags": "*",
-    "gnim": "*"
+    "gnim": "*",
+    "sysinfo": "^0.0.1"
   },
   "prettier": {
     "semi": false,
     "tabWidth": 2
+  },
+  "devDependencies": {
+    "@types/systeminformation": "^3.23.1"
   }
 }

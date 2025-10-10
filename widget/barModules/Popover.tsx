@@ -3,6 +3,8 @@ import GLib from "gi://GLib?version=2.0"
 import Gio from "gi://Gio?version=2.0"
 import { execAsync } from "ags/process"
 
+import Systeminfo from "./Systeminfo.tsx"
+
 export default function Popover() {
   const homeDir = GLib.get_home_dir()
   const customPic = `${GLib.get_current_dir()}/profilepic.png`
@@ -14,7 +16,7 @@ export default function Popover() {
   return (
     <popover class="Submenu">
       <box orientation={Gtk.Orientation.VERTICAL}>
-        <box hexpand>
+        <box hexpand class="Userinteractions">
           <image
             class="Profile"
             file={picExists ? customPic : ""}
@@ -35,6 +37,7 @@ export default function Popover() {
             />
           </button>
         </box>
+        <Systeminfo />
       </box>
     </popover>
   )

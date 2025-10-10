@@ -27,7 +27,6 @@
       wireplumber
       network
       mpris
-      apps
     ];
 
     extraPackages =
@@ -68,6 +67,7 @@
       default = pkgs.mkShell {
         buildInputs = [
           pkgs.brightnessctl
+          pkgs.nodejs
           (ags.packages.${system}.default.override {
             inherit extraPackages;
           })
