@@ -14,7 +14,7 @@ export default function Systeminfo() {
     <box class="SysteminfoCard">
       <box class="Cpu">
         <image class="CpuIcon" iconName="cpu-symbolic" />
-        <label label="" />
+        <label label={mem || "100%"} />
       </box>
     </box>
   )
